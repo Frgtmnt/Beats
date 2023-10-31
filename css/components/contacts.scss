@@ -5,11 +5,8 @@
   position: relative;
 
   :before {
-    content: "";
-    background: url(../../image/icons/phone.svg);
-    background-size: cover;
-    width: 14px;
-    height: 14px;
+    content: url(../../image/icons/phone.svg);
+    transform: scale(.55);
     position: absolute;
     top: 20%;
     left: -15%;
