@@ -4,20 +4,20 @@
   text-transform: uppercase;
   position: relative;
 
-  &:before {
+  :before {
     content: url(../../image/icons/phone.svg);
     transform: scale(.55);
     position: absolute;
-    top: 20%;
-    left: -15%;
+    top: 0;
+    left: -17%;
   }
 }
 
 .footer .contacts {
   padding-left: 20px;
 
-  &:before {
-    top: 15%;
-    left: 0;
+  :before {
+    top: -10%;
+    left: -2%;
   }
 }
