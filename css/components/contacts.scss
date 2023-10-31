@@ -4,7 +4,7 @@
   text-transform: uppercase;
   position: relative;
 
-  :before {
+ &__tel:before {
     content: url(../../image/icons/phone.svg);
     transform: scale(.55);
     position: absolute;
@@ -13,7 +13,7 @@
   }
 }
 
-.footer .contacts {
+.footer .contacts__tel {
   padding-left: 20px;
 
   :before {
