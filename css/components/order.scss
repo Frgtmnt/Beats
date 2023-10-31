@@ -1,0 +1,19 @@
+.order {
+  background: #181818;
+  color: #fff;
+  padding: 70px 0;
+  position: relative;
+
+  &:before {
+    content: url(../image/Polygon.png);
+    position: absolute;
+    top: -4%;
+    right: 10%;
+  }
+
+  &__title  {
+    @include title;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

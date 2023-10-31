@@ -1,0 +1,19 @@
+.feature {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 166px;
+  }
+
+  &__icon {
+    width: 41px;
+    margin-right: 11px;
+  }
+}

@@ -1,0 +1,26 @@
+.button {
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: none;
+  
+  &--color--red {
+    background: $red;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #CA1B36;
+    }
+  }
+
+  &--color--none {
+    color: #fff;
+    background: transparent;
+
+    &:hover {
+      color: $red;
+    }
+
+  }
+}
+

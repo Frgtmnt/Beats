@@ -1,0 +1,45 @@
+.hero {
+  background-color: #F5F5F5;
+  position: relative;
+  padding-bottom: 50px;
+
+  &-container {
+    background: url(./../image/headphones-white.png) bottom right / 46% auto no-repeat;
+  }
+
+  &:before {
+    content: url(../image/Rectangle1.png);
+    position: absolute;
+    bottom: -4%;
+    right: 10%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @include title;
+    width: 40%;
+    margin-bottom: 22px;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    width: 37%;
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    margin-bottom: 70px;
+  }
+
+  &__image {
+    width: 489px;
+  }
+
+}

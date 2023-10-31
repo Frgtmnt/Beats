@@ -1,0 +1,26 @@
+.contacts {
+  font-style: normal;
+  font-weight: 18px;
+  text-transform: uppercase;
+  position: relative;
+
+  :before {
+    content: "";
+    background: url(../../image/icons/phone.svg);
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 20%;
+    left: -15%;
+  }
+}
+
+.footer .contacts {
+  padding-left: 20px;
+
+  :before {
+    top: 15%;
+    left: 0;
+  }
+}
