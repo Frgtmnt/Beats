@@ -16,7 +16,7 @@
 
   &__content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   &__title {
@@ -37,9 +37,10 @@
   &__button {
     margin-bottom: 70px;
   }
+}
 
-  &__image {
-    width: 489px;
-  }
-
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
