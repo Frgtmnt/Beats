@@ -1,10 +1,13 @@
 .hero {
   background-color: #F5F5F5;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 
   &-container {
     background: url(./../image/headphones-white.png) bottom right / 46% auto no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &:before {
@@ -22,25 +25,19 @@
   &__title {
     @include title;
     width: 40%;
-    margin-bottom: 22px;
-    margin-top: 40px;
+    margin-bottom: 1.4rem;
+    margin-top: 2.5rem;
   }
 
   &__text {
     font-family: 'Alegreya Sans', Helvetica, sans-serif;
-    font-size: 21px;
+    font-size: 1.25rem;
     font-weight: 400;
     width: 37%;
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
   }
 
   &__button {
-    margin-bottom: 70px;
+    margin-bottom: 4.4rem;
   }
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
