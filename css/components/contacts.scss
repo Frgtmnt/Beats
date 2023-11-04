@@ -1,15 +1,21 @@
 .contacts {
   font-style: normal;
-  font-weight: 18px;
+  font-weight: 1.125rem;
   text-transform: uppercase;
   position: relative;
+  white-space: nowrap;
+  padding-top: 10px;
 
   &__tel:before {
     content: url(../image/icons/phone.svg);
     transform: scale(.55);
     position: absolute;
-    top: 0;
+    top: 27%;
     left: -17%;
+    flex-shrink: 0;
+  }
+
+  @include tablets {
+    display: none;
   }
 }
-

@@ -1,8 +1,15 @@
 .order {
   background: #181818;
   color: #fff;
-  padding: 70px 0;
+  padding: 4.4rem 0;
   position: relative;
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    display: flex;
+    align-items: center;
+  }
 
   &:before {
     content: url(../image/Polygon.png);
@@ -13,7 +20,15 @@
 
   &__title  {
     @include title;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     text-align: center;
+
+    @include tablets {
+      margin-bottom: 2.5rem;
+    }
+
+    @include phones {
+      @include title-small;
+    }
   }
 }

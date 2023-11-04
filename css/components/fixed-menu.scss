@@ -2,10 +2,14 @@
   position: fixed;
   top: 30%;
   right: 3%;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 
   :last-child {
     margin-bottom: 0;
@@ -24,21 +28,21 @@
 
 .fixed-menu__link {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
 
   &:before {
     content: "";
-    width: 7px;
-    height:7px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: $gray;
     position: absolute;
-    top: 8%;
-    left: 8%;
+    top: 4%;
+    left: 2%;
     transform: translate(50%, 50%);
   }
 }

@@ -1,6 +1,8 @@
 .why {
-  padding: 50px 0;
+  padding: 3.125rem 0;
   position: relative;
+  display: flex;
+  align-items: center;
   
   &:before {
     content: url(../image/triangle.png);
@@ -11,12 +13,20 @@
   
   &__head {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
+
+    @include phones {
+      margin-bottom: 3rem;
+    }
   }
 
   &__title {
     @include title;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
+
+    @include phones {
+        @include title-small;
+    }
   }
 
   &__text {
@@ -24,11 +34,23 @@
     display: inline-flex;
     justify-content: center;
     width: 50%;
+
+    @include tablets {
+      width: 80%;
+    }
+
+    @include phones {
+      width: 100%;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -42,9 +64,20 @@
     &:before {
       content: url(../image/dots.png);
       position: absolute;
-      top: 55px;
+      top: 3.4rem;
       right: 0;
       transform: translateX(50%);
+
+      @include tablets {
+        display: none;
+      }
+    }
+
+    @include phones {
+      flex-direction: row;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 1.9rem;  
     }
 
     &:first-child {
@@ -54,6 +87,10 @@
     &:last-child {
       padding-right: 0;
 
+      @include phones {
+        margin-bottom: 0;
+      }
+
       &:before {
         display: none;
       }
@@ -61,23 +98,31 @@
   }
 
   &__pic {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-self: center;
     background: #F2F5F4;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+
+    @include phones {
+      margin-right: 0.75rem;
+      margin-bottom: 0;
+      width: 25vw;
+      height: 25vw;
+      flex-shrink: 0;
+    }
   }
 
   &__icon {
-    width: 68px;
+    width: 4.25rem;
   }
 
   &__subtitle {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 7px;
+    margin-bottom: 0.5rem;
   }
 }

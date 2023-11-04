@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 65px;
-  font-size: 18px;
+  align-items: flex-start;
+  min-height: 4rem;
+  font-size: 1.125rem;
+  padding-top: 15px;
 }
-

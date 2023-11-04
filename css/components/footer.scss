@@ -2,14 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 85px;
+  min-height: 5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer .contacts {
+  @include tablets {
+    display: block;
+    color: $red;  
+  }
+
+  @include phones {
+    margin-top: 0.8rem;
+    color: $black;
+  }
 }
 
 .footer .contacts__tel {
-  padding-left: 20px;
+  padding-left: 1.25rem;
 
   &:before {
-    top: -12%;
+    top: 20%;
     left: -1%;
+
+    @include phones {
+      left: 20%;
+    }
   }
 }

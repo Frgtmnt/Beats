@@ -1,9 +1,13 @@
 .radio {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 1.5rem;
   cursor: pointer;
   user-select: none;
+
+  @include phones {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -11,9 +15,9 @@
 
   &--checkbox {
     .radio__visible{
-      width: 24px;
-      height: 24px;
-      border-radius: 3px;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.2rem;
 
       &:before {
         content: url(../../image/checkmark.png);
@@ -38,18 +42,18 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 
   &:before {
     content: "";
     display: none;
-    width: 13px;
-    height: 13px;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
     background: $red;
     position: absolute;

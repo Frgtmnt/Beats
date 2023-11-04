@@ -1,20 +1,20 @@
+html {
+  font-size: 16px;
+}
+
 html, body {
   height: 100%;
 }
+
 
 body {
   margin: 0;
   background: #fff;
   font-family: 'Play', Helvetica, sans-serif;
   color: #292929;
-  font-size: 16px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-html, body {
-  height: 100%;
 }
 
 * {
@@ -24,7 +24,6 @@ html, body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
-  min-width: 1100px;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +39,10 @@ section {
 
 .container {
   margin: 0 auto;
-  width: 1040px;
+  max-width: $containerwidth;
+  width: 100%;
+  padding: 0 10px;
+
 }
 
 footer {
@@ -75,3 +77,4 @@ ul li {
 img {
   display: inline-block;
 }
+

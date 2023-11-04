@@ -1,13 +1,24 @@
 .hero {
   background-color: #F5F5F5;
   position: relative;
-  padding-bottom: 3.125rem;
 
   &-container {
-    background: url(./../image/headphones-white.png) bottom right / 46% auto no-repeat;
+    background: url(./../image/headphones-white.png) bottom 15% right / 50% auto no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
+
+    @include tablets {
+      background-position: top 25% center;
+      background-size: 45%;
+      height: 100vh;
+    }
+
+    @include phones {
+      background-position: top 20% center;
+      background-size: 70%;
+    }
   }
 
   &:before {
@@ -20,6 +31,11 @@
   &__content {
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -27,6 +43,14 @@
     width: 40%;
     margin-bottom: 1.4rem;
     margin-top: 2.5rem;
+
+    @include tablets {
+      width: 80%;
+    }
+
+    @include phones {
+      @include title-small;
+    }
   }
 
   &__text {
@@ -35,6 +59,23 @@
     font-weight: 400;
     width: 37%;
     margin-bottom: 2.25rem;
+
+    @include tablets {
+      width: 50%;
+    }
+
+    @include phones {
+      width: 90%;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__feature {
+    margin-bottom: 3rem;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &__button {
