@@ -19,7 +19,6 @@
   }
 
   @include phones {
-    margin-top: 0.8rem;
     color: $black;
   }
 }
@@ -30,6 +29,10 @@
   &:before {
     top: 20%;
     left: -1%;
+
+    @include tablets {
+      fill: $red;
+    }
 
     @include phones {
       left: 20%;

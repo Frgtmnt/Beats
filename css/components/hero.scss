@@ -3,7 +3,7 @@
   position: relative;
 
   &-container {
-    background: url(./../image/headphones-white.png) bottom 15% right / 50% auto no-repeat;
+    background: url(./../image/headphones-white.png) bottom 15% right / auto 80vh no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,11 +13,13 @@
       background-position: top 25% center;
       background-size: 45%;
       height: 100vh;
+      padding-bottom: 10rem;
     }
 
     @include phones {
       background-position: top 20% center;
       background-size: 70%;
+      padding-bottom: 4rem;
     }
   }
 
@@ -76,9 +78,5 @@
     @include tablets {
       display: none;
     }
-  }
-
-  &__button {
-    margin-bottom: 4.4rem;
   }
 }
