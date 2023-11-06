@@ -40,11 +40,16 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
 }
 
 section {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -55,7 +60,6 @@ section {
 }
 
 footer {
-  position: relative;
   width: 100%;
 }
 
@@ -319,16 +323,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 768px) {
-  .order {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  padding: 3.75rem 0;
 }
 .order:before {
   content: url(../image/Polygon.png);
@@ -355,6 +350,21 @@ img {
     font-weight: 700;
     line-height: 1.08;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -675,6 +685,13 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,12 +790,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 9rem;
+    width: 65%;
   }
 }
 @media (max-width: 480px) {
   .form {
-    padding: 0;
+    width: 100%;
   }
 }
 
@@ -900,7 +917,7 @@ img {
   border-radius: 0.2rem;
 }
 .radio--checkbox .radio__visible:before {
-  content: url(../../image/checkmark.png);
+  content: url(../image/checkmark.png);
   background: none;
   top: 35%;
   left: 55%;
@@ -988,6 +1005,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .map__img {

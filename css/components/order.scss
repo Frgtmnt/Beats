@@ -4,11 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
-
-  @include tablets {
-    display: flex;
-    align-items: center;
-  }
+  padding: 3.75rem 0;
 
   &:before {
     content: url(../image/Polygon.png);
@@ -29,5 +25,13 @@
     @include phones {
       @include title-small;
     }
+  }
+}
+
+.order-container {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

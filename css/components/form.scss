@@ -3,11 +3,11 @@
 
   @include tablets {
     flex-direction: column;
-    padding: 0 9rem;
+    width: 65%;
   }
 
   @include phones {
-    padding: 0;
+    width: 100%;
   }
 }
 
