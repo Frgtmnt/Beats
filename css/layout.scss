@@ -17,6 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.body--active-menu {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }

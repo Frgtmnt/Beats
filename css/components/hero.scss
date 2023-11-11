@@ -51,7 +51,7 @@
     }
 
     @include phones {
-      @include title-small;
+      @include title(2rem);
     }
   }
 

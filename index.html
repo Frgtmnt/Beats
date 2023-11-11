@@ -10,7 +10,7 @@
 
 <body>
   <div class="wrapper">
- <div class="wrapper__content">
+    <div class="wrapper__content">
       <main class="main">
         <section class="hero">
           <div class="container hero-container">
@@ -150,6 +150,89 @@
             </div>
           </div>
         </section>
+        <section class="slider">
+          <div class="container slider-container">
+            <div class="slider__switch">
+              <button class="slider__button">
+                <img src="./image/left.svg" alt="" class="slider__arrow">
+              </button>
+              <button class="slider__button">
+                <img src="./image/right.svg" alt="" class="slider__arrow">
+              </button>
+            </div>
+            <ul class="slider__list">
+              <li class="slider__item slide">
+                <img src="./image/Slide1.png" alt="White headphones" class="slide__img">
+                <div class="slide__content">
+                  <div class="slide__menu">
+                    <div class="dropdown">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="./image/icons/sprite.svg#bluetooth"></use>
+                          </svg>
+                          <span class="dropdown__name">Bluetooth</span>
+                          <span class="dropdown__value">4.0</span>
+                        </li>
+                        <li class="dropdown__item">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="./image/icons/sprite.svg#road"></use>
+                          </svg>
+                          <span class="dropdown__name">Дальность</span>
+                          <span class="dropdown__value">12 м</span>
+                        </li>
+                        <li class="dropdown__item">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="./image/icons/sprite.svg#charging"></use>
+                          </svg>
+                          <span class="dropdown__name">Зарядка</span>
+                          <span class="dropdown__value">3 ч</span>
+                        </li>
+                        <li class="dropdown__item">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="./image/icons/sprite.svg#weight"></use>
+                          </svg>
+                          <span class="dropdown__name">Вес</span>
+                          <span class="dropdown__value">215гр</span>
+                        </li>
+                        <li class="dropdown__item">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="./image/icons/sprite.svg#guarantee"></use>
+                          </svg>
+                          <span class="dropdown__name">Гарантия</span>
+                          <span class="dropdown__value">1 год</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h3 class="slide__title">beats solo 3. цвет «атласное серебро»</h3>
+                  <div class="slide__text">
+                    <p>
+                      Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
+                      iPhone — они мгновенно подключатся к нему.
+                    </p>
+                  </div>
+                  <ul class="slide__list">
+                    <li class="slide__item">
+                      <span class="slide__desc">Зарядка</span>
+                      <span class="slide__value">2 часа</span>
+                    </li>
+                    <li class="slide__item">
+                      <span class="slide__desc">Вес</span>
+                      <span class="slide__value">215 грамм</span>
+                    </li>
+                  </ul>
+                  <div class="slide__order">
+                    <span class="slide__price">14 990 ₽</span>
+                    <div class="slide__button">
+                      <button class="button button--color--red">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__title">
@@ -162,7 +245,8 @@
                 <div class="review__text">
                   <p>
                     Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
-                    компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда
+                    компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
+                    всегда
                     под рукой. Это приятно и удобно.
                   </p>
                 </div>
@@ -341,13 +425,43 @@
           </li>
         </ul>
       </nav>
-      <a href="" class="hamburger">
+      <div class="hamburger">
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
-      </a>
- </div>
+      </div>
+      <div class="overlay">
+        <div class="overlay__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Наушники</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Команда</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Цвета</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Как мы работаем</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </div>
-</body>
 
+  <script src="./js/hamburger.js"></script>
+</body>
 </html>

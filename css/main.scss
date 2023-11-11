@@ -17,15 +17,8 @@ $phones: 480px;
 
 @import "./media.scss";
 
-@mixin title {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.08;
-  text-transform: uppercase;
-}
-
-@mixin title-small {
-  font-size: 2rem;
+@mixin title($font-size: 3rem) {
+  font-size: $font-size;
   font-weight: 700;
   line-height: 1.08;
   text-transform: uppercase;
@@ -41,11 +34,14 @@ $phones: 480px;
 @import "./components/order.scss";
 @import "./components/reviews.scss";
 @import "./components/why.scss";
+@import "./components/_slider.scss";
+@import "./components/dropdown";
 @import "./components/footer.scss";
 @import "./components/socials.scss";
 @import "./components/form.scss";
 @import "./components/radio.scss";
 @import "./components/fixed-menu.scss";
 @import "./components/map.scss";
-@import "./components/hamburger.scss"
+@import "./components/hamburger.scss";
+@import "./components/overlay";
 
