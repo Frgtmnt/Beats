@@ -14,6 +14,11 @@
 
 .slider-container {
   position: relative;
+  
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .slider__switch {
@@ -22,6 +27,16 @@
   top: 50%;
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    width: 70%;
+    top: 26%;
+  }
+
+  @include phones {
+    width: 100%;
+    top: 20%;
+  }
 }
 
 .slider__button {
@@ -46,6 +61,7 @@
 
   @include tablets {
     margin-right: 0;
+    margin-left: 0;
     margin-bottom: 3rem;
   }
 
