@@ -58,6 +58,7 @@
 .slide__img {
   width: 50%;
   margin: 0 3.75rem;
+  object-fit: contain;
 
   @include tablets {
     margin-right: 0;
@@ -78,6 +79,7 @@
 
   @include tablets {
     align-items: center;
+    text-align: center;
   }
 }
 
