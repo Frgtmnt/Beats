@@ -4,6 +4,12 @@
   align-items: center;
   position: relative;
 
+  .bx-wrapper {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
   &:before {
     content: url(../image/Rectangle\ 13.png);
     position: absolute;
@@ -27,6 +33,7 @@
   top: 50%;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 
   @include tablets {
     width: 70%;
@@ -39,14 +46,19 @@
   }
 }
 
-.slider__button {
+.slider__arrow {
   background: none;
   border: none;
   cursor: pointer;
 }
 
+.slider__list {
+  overflow: hidden;
+}
+
 .slider__item {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 
   @include tablets {
@@ -158,6 +170,7 @@
 
 .slide__value {
   font-weight: 700;
+  color: $black;
 }
 
 .slide__order {
