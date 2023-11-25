@@ -1531,7 +1531,7 @@ img {
   cursor: pointer;
 }
 .team__name:after {
-  content: url(../../image/Polygon\ 1.svg);
+  content: url(../image/Polygon1.svg);
   display: inline-block;
   margin-left: 5px;
 }

@@ -38,16 +38,11 @@ if (isValid) {
       comment: comment.val(),
       to: to.val()
     },
-
-    success: data => {},
-
-    error: data => {}
   });
 
   request.done(data => {
     content.text(data.message);
-
-    
+    e.target.reset();
   });
 
   request.fail(data => {
@@ -57,9 +52,6 @@ if (isValid) {
   request.always(() => {
     modal.css('display', 'inline');
   })
-
-e.target.reset();
-
 }
 })
 
