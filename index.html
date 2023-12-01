@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Beats</title>
 </head>
@@ -410,6 +409,54 @@
             </ul>
           </div>
         </section>
+        <section class="colors">
+          <div class="container colors-container">
+            <h2 class="colors__title">
+              Цвета
+            </h2>
+            <ul class="colors-menu">
+              <li class="colors-menu__item">
+                <a class="colors-menu__title">
+                  <div class="colors-menu__name">«Атласное серебро»</div>
+                </a>
+                <div class="colors-menu__content">
+                  <div class="colors-menu__text">
+                    <p>
+                      Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                      Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="colors-menu__item">
+                <a class="colors-menu__title">
+                  <div class="colors-menu__name">«Черный матовый»</div>
+                </a>
+                <div class="colors-menu__content">
+                  <div class="colors-menu__text">
+                    <p>
+                      Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                      Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="colors-menu__item">
+                <a class="colors-menu__title">
+                  <div class="colors-menu__name">«Красный цитрус»</div>
+                </a>
+                <div class="colors-menu__content">
+                  <div class="colors-menu__text">
+                    <p>
+                      Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                      Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__title">
@@ -417,7 +464,7 @@
             </h2>
             <ul class="reviews__list">
               <li class="reviews__single review review--active" data-review="one">
-                <img src="./image/review 1.png" alt="" class="review__avatar">
+                <img src="./image/review1.png" alt="" class="review__avatar">
                 <article class="review__content">
                   <h4 class="review__theme">Отличный звук</h4>
                   <div class="review__text">
@@ -432,7 +479,7 @@
                 </article>
               </li>
               <li class="reviews__single review" data-review="two">
-                <img src="./image/review 2.png" alt="" class="review__avatar">
+                <img src="./image/review2.png" alt="" class="review__avatar">
                 <article class="review__content">
                   <h4 class="review__theme">Надолго хватает заряда</h4>
                   <div class="review__text">
@@ -447,7 +494,7 @@
                 </article>
               </li>
               <li class="reviews__single review" data-review="three">
-                <img src="./image/review 3.png" alt="" class="review__avatar">
+                <img src="./image/review3.png" alt="" class="review__avatar">
                 <article class="review__content">
                   <h4 class="review__theme">Крутой дизайн</h4>
                   <div class="review__text">
@@ -473,6 +520,30 @@
                 <a href="#" class="reviews__link"><img src="./image/review3.png" alt="" class="reviews__icon"></a>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="player-section">
+          <div class="container">
+            <h2 class="player-section__title">Как мы работаем</h2>
+            <div class="player-section__container">
+              <div class="player paused">
+                <div class="player__wrapper">
+                  <div class="player__element" id="yt-player"></div>
+                  <div class="player__splash"></div>
+                </div>
+                <div class="player__controls">
+                  <button class="player__start"></button>
+                  <div class="player__playback">
+                    <div class="player__playback-completed"></div>
+                    <button class="player__playback-button"></button>
+                  </div>
+                  <div class="player__duration">
+                    <span class="player__duration-complete">0:00</span>
+                    <span class="player__duration-estimate">0:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="order">
@@ -554,8 +625,8 @@
             </form>
           </div>
         </section>
-        <section class="map">
-          <img src="./image/map.png" alt="" class="map__img">
+        <section class="map-section">
+          <div class="map" id="map"></div>
           <footer class="footer">
             <div class="container footer-container">
               <div class="address">
@@ -682,11 +753,16 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://api-maps.yandex.ru/v3/?apikey=0b16f9b7-0eea-4e03-bf06-deb1ab9db100&lang=ru_RU"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <script src="js/map.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/colors.js"></script>
 </body>
 </html>
