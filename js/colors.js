@@ -22,7 +22,6 @@ const openColorItem = item => {
   const container = item.closest('.colors-menu__item');
   const content = container.find('.colors-menu__content');
   const contentText = content.find('.colors-menu__text');
-  // const contentTextWidth = contentText.innerWidth();
   const contentTextWidth = measureWidth(item);
 
   console.log(contentTextWidth);

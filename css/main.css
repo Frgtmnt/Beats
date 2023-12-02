@@ -1467,6 +1467,11 @@ button {
   text-align: center;
   margin-bottom: 3.2rem;
 }
+@media (max-width: 480px) {
+  .team__title {
+    font-size: 2rem;
+  }
+}
 
 .team__list {
   display: -webkit-box;
@@ -1650,6 +1655,7 @@ button {
           justify-content: space-between;
   width: 100%;
   height: 100%;
+  padding-right: 0;
 }
 
 .colors__title {
@@ -1663,6 +1669,11 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+@media (max-width: 480px) {
+  .colors__title {
+    font-size: 2rem;
+  }
 }
 
 .colors-menu {
@@ -1698,6 +1709,11 @@ button {
   width: 6.25rem;
   height: 100%;
 }
+@media (max-width: 480px) {
+  .colors-menu__title {
+    width: 5rem;
+  }
+}
 
 .colors-menu__name {
   -webkit-transform: rotate(-90deg);
@@ -1709,6 +1725,11 @@ button {
   font-weight: 700;
   white-space: nowrap;
 }
+@media (max-width: 480px) {
+  .colors-menu__name {
+    left: -155%;
+  }
+}
 
 .colors-menu__content {
   width: 0;
@@ -1719,7 +1740,15 @@ button {
 
 .colors-menu__text {
   padding: 1.9rem;
-  width: 500px;
+}
+
+.player-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .player-section__title {
@@ -1730,6 +1759,11 @@ button {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2.75rem;
+}
+@media (max-width: 480px) {
+  .player-section__title {
+    font-size: 2rem;
+  }
 }
 
 .player-section__container {
@@ -1778,7 +1812,8 @@ button {
 }
 
 .player__splash {
-  background: url(../../image/player-splash.png);
+  background: url(../image/player-splash.png);
+  background-size: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1836,6 +1871,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+@media (max-width: 480px) {
+  .player__playback, .player__playback-completed {
+    width: 60%;
+  }
 }
 
 .player__playback-completed {

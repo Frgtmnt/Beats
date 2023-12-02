@@ -7,6 +7,10 @@
   @include title;
   text-align: center;
   margin-bottom: 3.2rem;
+
+  @include phones {
+    font-size: 2rem;
+  }
 }
 
 .team__list {
