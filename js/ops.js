@@ -3,7 +3,7 @@ const sections = $('section');
 
 sections.first().addClass('active');
 
-const mobileDetect = new MobileObject(window.navigator.userAgent);
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
