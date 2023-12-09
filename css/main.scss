@@ -12,10 +12,10 @@ $phones: 480px;
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Play:wght@400;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Play:wght@400;700&display=swap";
 
+@import "./media.scss";
+
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
 @import "./layout.scss";
-
-@import "./media.scss";
 
 @mixin title($font-size: 3rem) {
   font-size: $font-size;

@@ -1,5 +1,9 @@
 html {
   font-size: 16px;
+
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 html, body {
@@ -28,8 +32,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  min-height: 100%;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -40,6 +43,8 @@ body {
 
 .main {
   height: 100%;
+  transition: transform .5s;
+  will-change: transform;
 }
 
 

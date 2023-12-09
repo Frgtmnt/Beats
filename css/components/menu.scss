@@ -17,6 +17,10 @@
 
   &__link {
     white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   @include tablets {
