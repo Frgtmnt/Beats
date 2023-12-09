@@ -3,6 +3,9 @@ const sections = $('section');
 
 sections.first().addClass('active');
 
+const mobileDetect = new MobileObject(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 const performTransition = sectionEq => {
@@ -74,3 +77,16 @@ $('[data-scroll-to]').click(e => {
   performTransition(reqSection.index());
 });
 
+if (isMobile) {
+  $('body').swipe({
+    swipe: function(event, direction) {
+      const scroller = viewportScroller();
+      let scrollDirection = '';
+  
+      if (direction == 'up') scrollDirection = 'next';
+      if (direction == 'down') scrollDirection = 'prev';
+  
+      scroller[scrollDirection]();
+    }
+  })
+}
