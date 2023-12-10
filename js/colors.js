@@ -24,8 +24,6 @@ const openColorItem = item => {
   const contentText = content.find('.colors-menu__text');
   const contentTextWidth = measureWidth(item);
 
-  console.log(contentTextWidth);
-
   item.addClass('active');
   content.width(contentTextWidth);
 }
